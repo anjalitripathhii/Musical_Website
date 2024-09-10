@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Musical World - Your favourite music is here</title>
-        <link rel="stylesheet" href="style.css">
-        </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musical World - Your favourite music is here</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
+    <script>
+        // Check if the user is authenticated
+        if (!localStorage.getItem('isAuthenticated')) {
+            // Redirect to the login page if not authenticated
+            window.location.href = 'login.html';
+        }
+    </script>
     <nav>
         <ul>
             <li class="brand"><img src="logo.png" alt="Spotify"> Musical World</li>
@@ -32,14 +39,12 @@
                 </div>
                 <div class="songItem">
                     <img alt="1">
-                    <span class="songName">DEAF KEV - Invincible [NCS Release]-320k
-                    </span>
+                    <span class="songName">DEAF KEV - Invincible [NCS Release]-320k</span>
                     <span class="songlistplay"><span class="timestamp">05:34 <i id="2" class="far songItemPlay fa-play-circle"></i> </span></span>
                 </div>
                 <div class="songItem">
                     <img alt="1">
-                    <span class="songName">Different Heaven & EH!DE - My Heart [NCS Release]
-                    </span>
+                    <span class="songName">Different Heaven & EH!DE - My Heart [NCS Release]</span>
                     <span class="songlistplay"><span class="timestamp">05:34 <i id="3" class="far songItemPlay fa-play-circle"></i> </span></span>
                 </div>
                 <div class="songItem">
